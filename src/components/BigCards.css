@@ -1,0 +1,23 @@
+.top-section{
+    position: absolute;
+    left: 1.6rem;
+    top:1rem;
+    z-index: 1;
+    color:white;
+}
+.big-card-image {
+    max-height: 20rem;
+}
+.tag{
+    font-size: 0.8rem;
+}
+.button{
+    position: absolute;
+    bottom: 1.7rem;
+    left:1.6rem;
+    font-weight:600
+}
+.title{
+    white-space: pre-wrap;
+    line-height: 2rem;
+}

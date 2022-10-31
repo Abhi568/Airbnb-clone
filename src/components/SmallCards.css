@@ -1,0 +1,33 @@
+.image-class {
+  min-height: 18rem !important;
+  max-height: 18rem !important;
+  cursor: pointer;
+  /* height: 22rem; */
+  border-radius: 1rem;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
+
+.star-class {
+  font-size: 1.2rem;
+}
+
+.fav-heart-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  height: 1.1rem;
+  width: 1.2rem;
+  opacity: 0.7;
+}
+
+.card {
+  border: 0px;
+}
+
+.card-body {
+  cursor: pointer;
+  padding: 0.2rem 0px;
+}
