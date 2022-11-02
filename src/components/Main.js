@@ -32,7 +32,7 @@ let dataOfSmallCards = [
         "peopleReviewCount": "155"
     },
     {
-        "image": "http://idleclassmag.com/wp-content/uploads/2022/10/IMG_8525-660x601.jpg",
+        "image": "https://yt3.ggpht.com/uv-y2lYaj1Kfz-LuQwSn_vesLvbrZz_EKAo7KIat5Eb1M6LOFn6fkcZIpW3YibOJoldqKseCiw=s900-c-k-c0x00ffffff-no-rj",
         "rating": "4.4",
         "description": "Plan the perfect NewYork vacation",
         "country": "Mexico",
@@ -155,12 +155,11 @@ export default function Main() {
         let coursel = document.getElementsByClassName('big-cards')
         xSlideValue = xSlideValue + 592
         setXSlideValue(xSlideValue)
-        console.log("xBack", xSlideValue, totalWidth, totalWidth < Math.abs(xSlideValue))
         for (let i = 0; i < coursel.length; i++) {
             coursel[`${i}`].style.transform = `translate(${xSlideValue}px)`
         };
     }
-    let moveForward = () => {
+    function moveForward() {
         let coursel = document.getElementsByClassName('big-cards')
         xSlideValue = xSlideValue - 592
         setXSlideValue(xSlideValue)
@@ -168,9 +167,7 @@ export default function Main() {
             coursel[`${i}`].style.transform = `translate(${xSlideValue}px)`
         };
         var observer = new IntersectionObserver(function (entries) {
-            console.log(entries[0])
             if (entries[0].isIntersecting === true) {
-                console.log('visible')
                 setIsRightArrowVisibleForBigCards(false)
             }
         }, { threshold: [1] });
@@ -250,7 +247,6 @@ export default function Main() {
                         <div className="right-arrow" onClick={moveForwardForFilters}> <i className="arrow right"></i></div>
                     </button>
                 </div>
-
             </div>
 
             <div className='margin-left margin-top top-seller'>
